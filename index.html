@@ -3,93 +3,130 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Developer portfolio showcasing AI/ML projects, skills, and expertise in backend APIs and machine learning."
+    <meta name="description" content="Personal Portfolio Website" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
     />
-    <meta
-      name="keywords"
-      content="developer, portfolio, AI, machine learning, backend, Python, FastAPI"
-    />
-    <meta name="author" content="Your Name" />
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#0f172a" />
-
-    <!-- Open Graph for Social Sharing -->
-    <meta property="og:title" content="Developer Portfolio" />
-    <meta
-      property="og:description"
-      content="Passionate developer building intelligent systems with ML and backend APIs"
-    />
-    <meta property="og:type" content="website" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Developer Portfolio" />
-    <meta
-      name="twitter:description"
-      content="Explore my AI/ML projects and technical expertise"
-    />
-
-    <title>Developer Portfolio | Web Devloper</title>
-    <link rel="canonical" href="https://yourportfolio.com" />
-    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="logo">⚡ Portfolio</div>
-        <ul class="nav-menu" id="navMenu">
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <button class="mobile-menu-btn" id="mobileMenuBtn">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="logo">
+            <a href="#home">Portfolio</a>
+          </div>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="hero-container">
+    <section id="home" class="hero">
+      <div class="container">
         <div class="hero-content">
-          <span class="badge">🤖 Web Developer</span>
-          <h1>Hi, I'm <span class="highlight">Dibyaraj dahal</span></h1>
-          <p class="hero-description">
-            A passionate web developer crafting modern, responsive websites and
-            building efficient backend systems while continuously exploring new
-            technologies.
-          </p>
-          <div class="hero-buttons">
-            <button class="btn btn-primary">📧 Contact Me</button>
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-secondary"
-              >⭐ GitHub</a
-            >
+          <div class="hero-text">
+            <p class="hero-greeting fade-in">Hello, I'm</p>
+            <h1 class="hero-name fade-in">Dibyaraj Dahal</h1>
+            <h2 class="hero-profession fade-in">Full Stack Developer</h2>
+            <p class="hero-description fade-in">
+              I build exceptional digital experiences that make people's lives
+              easier and more enjoyable.
+            </p>
+            <div class="hero-buttons fade-in">
+              <a href="#portfolio" class="btn btn-primary">View Work</a>
+              <a href="#contact" class="btn btn-secondary">Hire Me</a>
+            </div>
+          </div>
+          <div class="hero-image fade-in">
+            <div class="image-placeholder">
+              <!-- Added actual profile image inside circle -->
+              <img
+                src="/image.jpg?height=400&width=400"
+                alt="Profile Picture"
+                class="profile-img"
+              />
+            </div>
           </div>
         </div>
-        <div class="hero-side">
-          <div class="profile-card">
-            <div class="profile-image">
-              <img src="profile.jpg" alt="Developer Profile" />
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Hi, I'm a passionate developer</h3>
+            <p>
+              I enjoy building modern, responsive, and user-friendly websites
+              and applications that provide smooth and engaging user
+              experiences. I’m passionate about writing clean, well-structured
+              code and exploring creative ways to solve problems while
+              continuously improving my skills.
+            </p>
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+          </div>
+          <div class="about-skills">
+            <h3>My Skills</h3>
+            <div class="skill">
+              <div class="skill-header">
+                <span>HTML & CSS</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
             </div>
-            <h3>✓ Available for work</h3>
-            <div class="role">Engineering Student</div>
-            <div class="location">
-              National College of Engineering, Lalitpur, Nepal
+            <div class="skill">
+              <div class="skill-header">
+                <span>JavaScript</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
             </div>
-            <div class="stats">
-              <div class="stat">
-                <div class="stat-number">5+</div>
-                <div class="stat-label">GitHub Projects</div>
+            <div class="skill">
+              <div class="skill-header">
+                <span>React & Node.js</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <span>UI/UX Design</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
               </div>
             </div>
           </div>
@@ -97,184 +134,406 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
+    <!-- Services Section -->
+    <section id="services" class="services">
       <div class="container">
-        <h2>Skills & Technologies</h2>
-        <p class="section-subtitle">Tools I work with daily</p>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <span class="skill-icon">🐍</span>
-            <h3>Python</h3>
+        <div class="section-header">
+          <h2 class="section-title">What I Do</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">Services I offer to my clients</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3>Web Development</h3>
+            <p>
+              Creating responsive and modern websites with clean code and best
+              practices.
+            </p>
           </div>
-          <div class="skill-card">
-            <span class="skill-icon">⚙️</span>
-            <h3>C++</h3>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="3" y="4" width="18" height="14" rx="2"></rect>
+                <line x1="8" y1="20" x2="16" y2="20"></line>
+              </svg>
+            </div>
+            <h3>Mobile Friendly Design</h3>
+            <p>
+              Ensuring websites look and perform perfectly on all devices and
+              screen sizes.
+            </p>
           </div>
-          <div class="skill-card">
-            <span class="skill-icon">🧠</span>
-            <h3>HTML</h3>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3>Backend Development</h3>
+            <p>Developing robust server-side applications and RESTful APIs.</p>
           </div>
-          <div class="skill-card">
-            <span class="skill-icon">🔬</span>
-            <h3>CSS</h3>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="3"></circle>
+                <path
+                  d="M12 1v6m0 6v6M5.6 5.6l4.2 4.2m4.2 4.2l4.2 4.2M1 12h6m6 0h6M5.6 18.4l4.2-4.2m4.2-4.2l4.2-4.2"
+                ></path>
+              </svg>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>
+              Designing intuitive and beautiful user interfaces that users love.
+            </p>
           </div>
-          <div class="skill-card">
-            <span class="skill-icon">⚡</span>
-            <h3>Javascript</h3>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                ></path>
+              </svg>
+            </div>
+            <h3>Consulting</h3>
+            <p>
+              Providing expert advice on technology choices and architecture.
+            </p>
           </div>
-          <div class="skill-card">
-            <span class="skill-icon">📦</span>
-            <h3>React Js</h3>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3>Code Review</h3>
+            <p>
+              Reviewing and optimizing code for performance and maintainability.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Featured Project -->
-    <section class="featured-project">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
       <div class="container">
-        <span class="project-badge">Featured Project</span>
-        <h2>Fraud Detection API</h2>
-        <p class="project-description">
-          Car Insurance Fraud Detection using FastAPI & Machine Learning.
-          Predicts whether an insurance claim is fraudulent or genuine using a
-          trained ML model.
-        </p>
-        <div class="project-tags">
-          <span class="tag">Python</span>
-          <span class="tag">FastAPI</span>
-          <span class="tag">ML</span>
-          <span class="tag">Scikit-learn</span>
+        <div class="section-header">
+          <h2 class="section-title">My Portfolio</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">Recent projects I've worked on</p>
         </div>
-        <a
-          href="https://github.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn btn-secondary"
-          >👁️ View Code</a
-        >
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img
+                src="/image.png?height=400&width=600"
+                alt="Contact Qr"
+              />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3>Contact Qr</h3>
+                  <p> online Contact QR website</p>
+                  <a href='https://dibyaraj-dahal.github.io/qrly/' class="portfolio-link">View Project →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img
+                src="/cal.png"
+                alt="Calculator App"
+              />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3>Calculator App</h3>
+                  <p>Real-time online Calculator</p>
+                  <a href="https://calculator-dibyaraj.netlify.app" class="portfolio-link">  View Project →
+</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img
+                src="/placeholder.svg?height=400&width=600"
+                alt="T"
+              />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3></h3>
+                  <p></p>
+                  <a href="#" class="portfolio-link">View Project →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img
+                src="/placeholder.svg?height=400&width=600"
+                alt=""
+              />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3></h3>
+                  <p></p>
+                  <a href="#" class="portfolio-link">View Project →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img
+                src="/placeholder.svg?height=400&width=600"
+                alt=""
+              />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3></h3>
+                  <p></p>
+                  <a href="#" class="portfolio-link">View Project →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img
+                src="/placeholder.svg?height=400&width=600"
+                alt=""
+              />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3></h3>
+                  <p></p>
+                  <a href="#" class="portfolio-link">View Project →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Focus Areas -->
-    <section class="focus-areas">
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
       <div class="container">
-        <div class="focus-card">
-          <span style="font-size: 2.5rem">🎯</span>
-          <h3>Focus Areas</h3>
-          <p>Frontend Development, Responsive UI Design & Backend APIs</p>
+        <div class="section-header">
+          <h2 class="section-title">Experience & Education</h2>
+          <div class="title-underline"></div>
         </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-      <div class="container">
-        <h2>More Projects</h2>
-        <p class="section-subtitle">Explore my GitHub repositories</p>
-        <div class="projects-grid">
-          <article class="project-item">
-            <h3>FastAPI Patient Records</h3>
-            <p>
-              RESTful API built with FastAPI for managing patient records.
-              Supports CRUD operations with JSON and handles authentication.
-            </p>
-            <div class="project-techs">
-              <span>Python</span>
-              <span>FastAPI</span>
-              <span>Pydantic</span>
+        <div class="timeline">
+        
+          </div>
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <div class="timeline-badge">💼</div>
+              <h3>Full Stack Developer</h3>
+              <h4></h4>
+            
+              <p>
+                Developed and maintained multiple client projects using modern
+                web technologies.
+              </p>
             </div>
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-link"
-              >View on GitHub ↗</a
-            >
-          </article>
-
-          <article class="project-item">
-            <h3>Car Insurance Fraud Detection</h3>
-            <p>
-              Machine learning model to detect fraudulent car insurance claims
-              using classification algorithms and data analysis.
-            </p>
-            <div class="project-techs">
-              <span>Python</span>
-              <span>Jupyter</span>
-              <span>ML</span>
+          </div>
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <div class="timeline-badge">💼</div>
+              <h3>Frontend Developer</h3>
+              <h4></h4>
+            
+              <p>
+                Built responsive websites and implemented pixel-perfect designs.
+              </p>
             </div>
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-link"
-              >View on GitHub ↗</a
-            >
-          </article>
-
-          <article class="project-item">
-            <h3>Machine Learning Codebase</h3>
-            <p>
-              Comprehensive code examples, model training, hyper-parameter
-              tuning, and more implementations in Jupyter notebook.
-            </p>
-            <div class="project-techs">
-              <span>Python</span>
-              <span>Scikit-learn</span>
-              <span>ML</span>
+          </div>
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <div class="timeline-badge">🎓</div>
+              <h3>Bachelor of Computer Engineering</h3>
+              <h4>National college of Engineering</h4>
+              <span class="timeline-date">2024 - 2028</span>
+              <p>
+                Graduated with excellence. Specialized in Web Designs and
+                web development.
+              </p>
             </div>
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-link"
-              >View on GitHub ↗</a
-            >
-          </article>
-
-          <article class="project-item">
-            <h3>Movie Review Sentiment Analysis</h3>
-            <p>
-              NLP project that classifies movie reviews as positive or negative
-              using machine learning models and text preprocessing.
-            </p>
-            <div class="project-techs">
-              <span>Python</span>
-              <span>NLP</span>
-              <span>ML</span>
-            </div>
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-link"
-              >View on GitHub ↗</a
-            >
-          </article>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <section id="contact" class="contact">
       <div class="container">
-        <h2>Get In Touch</h2>
-        <p class="contact-description">
-          Let's build something amazing together!
-        </p>
-        <div class="hero-buttons">
-          <a href="mailto:your.email@example.com" class="btn btn-primary"
-            >📧 Send Email</a
-          >
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-secondary"
-            >LinkedIn</a
-          >
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            Let's work together on your next project
+          </p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <h3>Address</h3>
+                <p>Bargachhi,Biratnagar,Nepal</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3>Email</h3>
+                <p>dahaldibyaraj46@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <h3>Phone</h3>
+                <p>+977-9812394547</p>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
         </div>
       </div>
     </section>
@@ -282,7 +541,78 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <div class="footer-content">
+          <div class="footer-text">
+            <p>&copy; 2026 Dibyaraj dahal. All rights reserved.</p>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="GitHub">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                ></path>
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <rect
+                  x="2"
+                  y="2"
+                  width="20"
+                  height="20"
+                  rx="5"
+                  ry="5"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-width="2"
+                ></rect>
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="4"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-width="2"
+                ></circle>
+                <circle cx="17.5" cy="6.5" r="1.5"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
 
