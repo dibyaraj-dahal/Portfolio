@@ -1,6 +1,3 @@
-// ===========================
-// Navbar Active Link on Scroll
-// ===========================
 const sections = document.querySelectorAll("section")
 const navLinks = document.querySelectorAll(".nav-link")
 
